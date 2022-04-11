@@ -1,3 +1,5 @@
+import styles from './CurrencyFilter.module.css'
+
 interface  CurrencyFilterProps {
     onFilterChange: (filter: string) => void
 }
@@ -9,10 +11,13 @@ const CurrencyFilter: React.FC<CurrencyFilterProps> = ({onFilterChange}) => {
         onFilterChange(event.target.value);
     }
     return (
-        <input 
-        onChange={filterChangeHandler}
-        type="text" 
-        />
+        <div className={styles['filter-wrapper']}>
+            <input 
+            placeholder='Название или Код валюты'
+            onChange={filterChangeHandler}
+            type="text" 
+            />
+        </div>
     );
 }
 

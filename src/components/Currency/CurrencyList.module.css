@@ -1,0 +1,16 @@
+.currency-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.currency-list li.up {
+    color: darkgreen;
+}
+.currency-list li.down {
+    color: crimson;
+}

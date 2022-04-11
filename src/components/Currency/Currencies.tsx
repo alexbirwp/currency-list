@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getCurrencyList } from "../../api/currenciesApi";
 import Container from "../Layout/Container";
 import CurrencyFilter from "./CurrencyFilter";
 import CurrencyList from "./CurrencyList";
@@ -10,11 +11,7 @@ const Currencies: React.FC = () => {
     const [filter, setFilter] = useState('');
 
     useEffect(() => {
-        fetch('https://www.cbr-xml-daily.ru/daily_json.js')
-        .then(response => response.json())
-        .then(data => {
-            setValutes(Object.values(data.Valute))
-        })
+        getCurrencyList(setValutes);
     }, []);
 
     const filterChangeHandler = (newFilter : string) => {

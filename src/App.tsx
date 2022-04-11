@@ -1,14 +1,20 @@
+import ActiveCurrency from './components/ActiveCurrency/ActiveCurrency';
 import Currencies from './components/Currency/Currencies';
-import CurrencyList from './components/Currency/CurrencyList';
+import ActiveValuteProvider from './context/ActiveValuteContext';
 
 function App() {
   return (
-    <div>
-      <Currencies />
+    <>
+      <main>
+        <ActiveValuteProvider>
+          <Currencies />
+          <ActiveCurrency />
+        </ActiveValuteProvider>
+      </main>
       <footer>
         <a href="https://www.cbr-xml-daily.ru/">API для курсов ЦБ РФ</a>
       </footer>
-    </div>
+    </>
   );
 }
 

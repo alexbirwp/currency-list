@@ -1,0 +1,42 @@
+.active-currency-wrapper {
+    display: block;
+    position: fixed;
+    width: 600px;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: transform linear .3s;
+    background-color: #ccc;
+    overflow: hidden;
+    z-index: 2;
+    transform: translateX(0);
+}
+
+.active-currency-wrapper > div {
+    padding: 50px 10px 20px 10px;
+}
+
+.active-currency-wrapper.hidden {
+    transform: translateX(100%);
+}
+
+.close-button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.close-button > span {
+    display: block;
+}

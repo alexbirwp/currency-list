@@ -1,0 +1,9 @@
+.filter-wrapper {
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+.filter-wrapper input {
+    width: 100%;
+    font-display: block;
+    padding: 10px;
+}

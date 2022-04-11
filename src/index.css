@@ -13,3 +13,23 @@ ul, ol {
     margin: 0 auto;
     padding: 0 15px;
 }
+footer {
+    display: block;
+    position: fixed;
+    background-color: #ccc;
+    width: 100%;
+    padding: 20px 15px;
+    bottom: 0;
+    text-align: center;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+main {
+    min-height: 100vh;
+    padding-bottom: 58px;
+}
