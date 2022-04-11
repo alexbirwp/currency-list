@@ -1,9 +1,16 @@
 .filter-wrapper {
     margin-bottom: 15px;
     padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 .filter-wrapper input {
     width: 100%;
     font-display: block;
     padding: 10px;
+}
+.filter-wrapper select {
+    width: 95px;
 }
